@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/term.css" />
+    
+	<title>Portfólio</title>
+  </head>
+  <body onselectstart="return false">
+    <main>
+		<div class="checkbox-container">
+			<div class="checkbox-wrapper">
+			  <input type="checkbox" id="toggle" />
+			  <label class="checkbox" for="toggle">
+				<div class="trace"></div>
+				<div class="trace"></div>
+				<div class="trace"></div>
+			  </label>
+			  <div class="menu"></div>
+			  <nav class="menu-items">
+				<ul class="ul">
+				  <li><a href="../index.html">Home</a></li>
+				  <li><a href="aboutMe.html">Sobre</a></li>
+				  <li><a href="term.html">Projetos</a></li>
+				</ul>
+			  </nav>
+			</div>
+		</div>
+		<div id="tentativas">
+			<div id="palavra0">
+				<div class="letter_empty" id="0" onclick="setarPosicao(0,0);"></div>
+				<div class="letter_empty" id="1" onclick="setarPosicao(0,1);"></div>
+				<div class="letter_empty" id="2" onclick="setarPosicao(0,2);"></div>
+				<div class="letter_empty" id="3" onclick="setarPosicao(0,3);"></div>
+			</div>
+			
+			<div id="palavra1">
+				<div class="letter" id="0" onclick="setarPosicao(1,0);"></div>
+				<div class="letter" id="1" onclick="setarPosicao(1,1);"></div>
+				<div class="letter" id="2" onclick="setarPosicao(1,2);"></div>
+				<div class="letter" id="3" onclick="setarPosicao(1,3);"></div>
+			</div>
+
+			<div id="palavra2">
+				<div class="letter" id="0" onclick="setarPosicao(2,0);"></div>
+				<div class="letter" id="2" onclick="setarPosicao(2,1);"></div>
+				<div class="letter" id="1" onclick="setarPosicao(2,2);"></div>
+				<div class="letter" id="3" onclick="setarPosicao(2,3);"></div>
+			</div>
+
+			<div id="palavra3">
+				<div class="letter" id="0" onclick="setarPosicao(3,0);"></div>
+				<div class="letter" id="1" onclick="setarPosicao(3,1);"></div>
+				<div class="letter" id="2" onclick="setarPosicao(3,2);"></div>
+				<div class="letter" id="3" onclick="setarPosicao(3,3);"></div>
+			</div>
+
+			<div id="palavra4">
+				<div class="letter" id="0" onclick="setarPosicao(4,0);"></div>
+				<div class="letter" id="1" onclick="setarPosicao(4,1);"></div>
+				<div class="letter" id="2" onclick="setarPosicao(4,2);"></div>
+				<div class="letter" id="0" onclick="setarPosicao(4,3);"></div>
+			</div>
+			<div id="palavra5">
+				<div class="letter" id="0" onclick="setarPosicao(5,0);"></div>
+				<div class="letter" id="1" onclick="setarPosicao(5,1);"></div>
+				<div class="letter" id="2" onclick="setarPosicao(5,2);"></div>
+				<div class="letter" id="3" onclick="setarPosicao(5,3);"></div>
+			</div>
+		</div>
+		<div class="keyboard">
+			<span id="Key_Q" onclick="inserirLetra('Q');"><i>Q</i></span>
+			<span id="Key_W" onclick="inserirLetra('W');"><i>W</i></span>
+			<span id="Key_E" onclick="inserirLetra('E');"><i>E</i></span>
+			<span id="Key_R" onclick="inserirLetra('R');"><i>R</i></span>
+			<span id="Key_T" onclick="inserirLetra('T');"><i>T</i></span>
+			<span id="Key_Y" onclick="inserirLetra('Y');"><i>Y</i></span>
+			<span id="Key_U" onclick="inserirLetra('U');"><i>U</i></span>
+			<span id="Key_I" onclick="inserirLetra('I');"><i>I</i></span>
+			<span id="Key_O" onclick="inserirLetra('O');"><i>O</i></span>
+			<span id="Key_P" onclick="inserirLetra('P');"><i>P</i></span>
+		</div>
+		<div class="keyboard">
+            <span id="Key_A" onclick="inserirLetra('A');"><i>A</i></span>
+			<span id="Key_S" onclick="inserirLetra('S');"><i>S</i></span>
+			<span id="Key_D" onclick="inserirLetra('D');"><i>D</i></span>
+			<span id="Key_F" onclick="inserirLetra('F');"><i>F</i></span>
+			<span id="Key_G" onclick="inserirLetra('G');"><i>G</i></span>
+			<span id="Key_H" onclick="inserirLetra('H');"><i>H</i></span>
+			<span id="Key_J" onclick="inserirLetra('J');"><i>J</i></span>
+			<span id="Key_K" onclick="inserirLetra('K');"><i>K</i></span>
+			<span id="Key_L" onclick="inserirLetra('L');"><i>L</i></span>
+			<span id="Key_DELETE" onclick="deletarLetra('DELETE');"><i><img src="../image/baseline_backspace_white_24dp.png" alt="image for delete letter"></i></span>
+		</div>
+		<div id="ultimo" class="keyboard">
+			<span id="Key_Z" onclick="inserirLetra('Z');"><i>Z</i></span>
+			<span id="Key_X" onclick="inserirLetra('X');"><i>X</i></span>
+			<span id="Key_C" onclick="inserirLetra('C');"><i>C</i></span>
+			<span id="Key_V" onclick="inserirLetra('V');"><i>V</i></span>
+			<span id="Key_B" onclick="inserirLetra('B');"><i>B</i></span>
+			<span id="Key_N" onclick="inserirLetra('N');"><i>N</i></span>
+			<span id="Key_M" onclick="inserirLetra('M');"><i>M</i></span>
+			<span id="Key_ENTER" onclick="verificarPalavra()"><i>ENTER</i></span>
+		</div>
+	</main>
+	<script src="../js/term.js"></script>
+  </body>
+</html>
